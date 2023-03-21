@@ -18,6 +18,7 @@ Mockito and JUnit for unit testing.
 UI/UX Design:
 https://dribbble.com/shots/16789816-Football-Live-Score-App
 ![alt text]([http://url/to/img.png](https://cdn.dribbble.com/users/4710151/screenshots/16789816/media/4241c2110055ec990a86f1b254c45da1.png?compress=1&resize=1600x1200&vertical=top))
+
 Contributing:
 This is an open-source project and contributions are welcome. Please follow the contribution guidelines and code of conduct provided in the project repository.
 
