@@ -8,6 +8,8 @@ junit = "4.13.2"
 lifecycle-runtime-ktx = "2.6.2"
 compose-ui = "1.5.4"
 material = "1.5.4"
+ktor = "2.3.6"
+kotlinx-serialization = "1.6.1"
 
 [libraries]
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activity-compose" }
@@ -22,5 +24,10 @@ androidx-ui-tooling = {module= "androidx.compose.ui:ui-tooling", version.ref = "
 androidx-ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest", version.ref = "compose-ui" }
 androidx-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose-ui" }
 junit = { module = "junit:junit", version.ref = "junit" }
+io-ktor-client-android = {module = "io.ktor:ktor-client-android", version.ref = "ktor"}
+io-ktor-client-serialization = {module = "io.ktor:ktor-client-serialization", version.ref = "ktor"}
+io-ktor-client-logging-jvm = {module = "io.ktor:ktor-client-logging-jvm", version.ref = "ktor"}
+jetbrains-kotlinx-serialization-json = {module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinx-serialization"}
 
-[plugins]
+
+
