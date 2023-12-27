@@ -5,12 +5,16 @@ composeUiVersion = "1.5.4"
 core-ktx = "1.12.0"
 espressoCore = "3.5.1"
 junit = "4.13.2"
+koinCore = "3.5.0"
 lifecycle-runtime-ktx = "2.6.2"
 compose-ui = "1.5.4"
 material = "1.5.4"
 ktor = "2.3.6"
 kotlinx-serialization = "1.6.1"
-
+org-jetbrains-kotlin-jvm = "1.9.20"
+org-jetbrains-kotlin-android = "1.9.20"
+com-android-library = "8.1.0"
+com-android-application = "8.1.0"
 [libraries]
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activity-compose" }
 androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "core-ktx" }
@@ -20,14 +24,21 @@ androidx-lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtim
 androidx-material = { module = "androidx.compose.material:material", version.ref = "material" }
 androidx-ui = { module = "androidx.compose.ui:ui", version.ref = "compose-ui" }
 androidx-ui-test-junit4 = { module = "androidx.compose.ui:ui-test-junit4", version.ref = "compose-ui" }
-androidx-ui-tooling = {module= "androidx.compose.ui:ui-tooling", version.ref = "compose-ui"}
+androidx-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose-ui" }
 androidx-ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest", version.ref = "compose-ui" }
 androidx-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose-ui" }
 junit = { module = "junit:junit", version.ref = "junit" }
-io-ktor-client-android = {module = "io.ktor:ktor-client-android", version.ref = "ktor"}
-io-ktor-client-serialization = {module = "io.ktor:ktor-client-serialization", version.ref = "ktor"}
-io-ktor-client-logging-jvm = {module = "io.ktor:ktor-client-logging-jvm", version.ref = "ktor"}
-jetbrains-kotlinx-serialization-json = {module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinx-serialization"}
-
-
+io-ktor-client-android = { module = "io.ktor:ktor-client-android", version.ref = "ktor" }
+io-ktor-client-serialization = { module = "io.ktor:ktor-client-serialization", version.ref = "ktor" }
+io-ktor-client-logging-jvm = { module = "io.ktor:ktor-client-logging-jvm", version.ref = "ktor" }
+io-ktor-client-logging-native = { module = "io.ktor:ktor-client-logging-native", version.ref = "ktor" }
+jetbrains-kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinx-serialization" }
+koin-android = { module = "io.insert-koin:koin-android", version.ref = "koinCore" }
+koin-core = { module = "io.insert-koin:koin-core", version.ref = "koinCore" }
+koin-test-junit4 = { module = "io.insert-koin:koin-test-junit4", version.ref = "koinCore" }
+[plugins]
+org-jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "org-jetbrains-kotlin-jvm" }
+org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "org-jetbrains-kotlin-android" }
+com-android-library = { id = "com.android.library", version.ref = "com-android-library" }
+com-android-application = { id = "com.android.application", version.ref = "com-android-application" }
 

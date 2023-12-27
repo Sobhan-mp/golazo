@@ -13,5 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "Golazo"
-include ':app'
-include ':network'
+include("app", "network")

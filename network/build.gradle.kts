@@ -1,16 +1,27 @@
+import org.jetbrains.kotlin.ir.builders.declarations.buildVariable
+
 @Suppress("DSL_SCOPE_VIOLATION") // TODO: Remove once KTIJ-19369 is fixed
 plugins {
-    id("java-library")
+    alias(libs.plugins.org.jetbrains.kotlin.jvm)
 }
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_1_8
-    targetCompatibility = JavaVersion.VERSION_1_8
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+ext{
+    val apiToken = hasProperty("GOLAZO_API_TOKEN")
 }
 
 dependencies{
     implementation(libs.io.ktor.client.android)
     implementation(libs.io.ktor.client.serialization)
     implementation(libs.io.ktor.client.logging.jvm)
+    implementation(libs.io.ktor.client.logging.native)
     implementation(libs.jetbrains.kotlinx.serialization.json)
+    implementation(libs.koin.core)
+
+    testImplementation(libs.junit)
+    testImplementation (libs.koin.test.junit4)
 }
