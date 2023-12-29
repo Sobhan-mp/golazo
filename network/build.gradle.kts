@@ -19,6 +19,8 @@ dependencies{
     implementation(libs.io.ktor.client.serialization)
     implementation(libs.io.ktor.client.logging.jvm)
     implementation(libs.io.ktor.client.logging)
+    testImplementation(libs.ktor.client.mock)
+    implementation(libs.ktor.server.default.headers)
     implementation(libs.jetbrains.kotlinx.serialization.json)
     implementation(libs.koin.core)
 
