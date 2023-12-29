@@ -8,8 +8,6 @@ import io.ktor.client.plugins.logging.LogLevel
 import io.ktor.client.plugins.logging.Logger
 import io.ktor.client.plugins.logging.Logging
 import io.ktor.client.request.header
-import io.ktor.client.request.headers
-import io.ktor.http.headers
 import org.koin.dsl.module
 
 object NetworkModule {
@@ -28,7 +26,8 @@ object NetworkModule {
                     KEY
                 )
             }
-            install(Logging) {
+            
+            install(Logging){
                 logger = Logger.DEFAULT
                 level = LogLevel.ALL
             }

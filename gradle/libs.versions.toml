@@ -9,7 +9,7 @@ koinCore = "3.5.0"
 lifecycle-runtime-ktx = "2.6.2"
 compose-ui = "1.5.4"
 material = "1.5.4"
-ktor = "2.3.6"
+ktor = "2.3.7"
 kotlinx-serialization = "1.6.1"
 org-jetbrains-kotlin-jvm = "1.9.20"
 org-jetbrains-kotlin-android = "1.9.20"
@@ -31,7 +31,7 @@ junit = { module = "junit:junit", version.ref = "junit" }
 io-ktor-client-android = { module = "io.ktor:ktor-client-android", version.ref = "ktor" }
 io-ktor-client-serialization = { module = "io.ktor:ktor-client-serialization", version.ref = "ktor" }
 io-ktor-client-logging-jvm = { module = "io.ktor:ktor-client-logging-jvm", version.ref = "ktor" }
-io-ktor-client-logging-native = { module = "io.ktor:ktor-client-logging-native", version.ref = "ktor" }
+io-ktor-client-logging = { module = "io.ktor:ktor-client-logging", version.ref = "ktor" }
 jetbrains-kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinx-serialization" }
 koin-android = { module = "io.insert-koin:koin-android", version.ref = "koinCore" }
 koin-core = { module = "io.insert-koin:koin-core", version.ref = "koinCore" }

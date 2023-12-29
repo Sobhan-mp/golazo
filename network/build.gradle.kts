@@ -18,7 +18,7 @@ dependencies{
     implementation(libs.io.ktor.client.android)
     implementation(libs.io.ktor.client.serialization)
     implementation(libs.io.ktor.client.logging.jvm)
-    implementation(libs.io.ktor.client.logging.native)
+    implementation(libs.io.ktor.client.logging)
     implementation(libs.jetbrains.kotlinx.serialization.json)
     implementation(libs.koin.core)
 
