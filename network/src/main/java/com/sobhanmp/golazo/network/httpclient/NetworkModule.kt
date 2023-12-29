@@ -26,6 +26,7 @@ object NetworkModule {
                     KEY
                 )
             }
+            
             install(Logging){
                 logger = Logger.DEFAULT
                 level = LogLevel.ALL
