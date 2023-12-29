@@ -3,6 +3,7 @@ activity-compose = "1.8.1"
 androidx-junit = "1.1.5"
 composeUiVersion = "1.5.4"
 core-ktx = "1.12.0"
+dotenvKotlin = "6.4.1"
 espressoCore = "3.5.1"
 junit = "4.13.2"
 koinCore = "3.5.0"
@@ -27,6 +28,7 @@ androidx-ui-test-junit4 = { module = "androidx.compose.ui:ui-test-junit4", versi
 androidx-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose-ui" }
 androidx-ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest", version.ref = "compose-ui" }
 androidx-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose-ui" }
+dotenv-kotlin = { module = "io.github.cdimascio:dotenv-kotlin", version.ref = "dotenvKotlin" }
 junit = { module = "junit:junit", version.ref = "junit" }
 io-ktor-client-android = { module = "io.ktor:ktor-client-android", version.ref = "ktor" }
 io-ktor-client-serialization = { module = "io.ktor:ktor-client-serialization", version.ref = "ktor" }
