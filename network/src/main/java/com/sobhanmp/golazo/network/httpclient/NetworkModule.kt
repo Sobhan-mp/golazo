@@ -14,6 +14,7 @@ import io.ktor.client.plugins.logging.Logging
 import io.ktor.client.request.header
 import org.koin.dsl.module
 import java.io.FileReader
+import java.lang.reflect.Executable
 import java.util.Properties
 
 object NetworkModule {
@@ -40,7 +41,12 @@ object NetworkModule {
     }
 
     private fun getApiKey(): String{
-        val dotenv = dotenv()
-        return dotenv["AUTH_KEY"] ?: ""
+        return try{
+            val dotenv = dotenv()
+            dotenv["AUTH_KEY"] ?: ""
+        } catch (e: Exception){
+            ""
+        }
+
     }
 }
