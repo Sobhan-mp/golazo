@@ -16,6 +16,8 @@ org-jetbrains-kotlin-jvm = "1.9.20"
 org-jetbrains-kotlin-android = "1.9.20"
 com-android-library = "8.1.0"
 com-android-application = "8.1.0"
+appcompat = "1.6.1"
+com-google-android-material-material = "1.11.0"
 [libraries]
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activity-compose" }
 androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "core-ktx" }
@@ -40,9 +42,14 @@ koin-core = { module = "io.insert-koin:koin-core", version.ref = "koinCore" }
 koin-test-junit4 = { module = "io.insert-koin:koin-test-junit4", version.ref = "koinCore" }
 ktor-client-mock = { module = "io.ktor:ktor-client-mock", version.ref = "ktor" }
 ktor-server-default-headers = { module = "io.ktor:ktor-server-default-headers", version.ref = "ktor" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "com-google-android-material-material" }
+
 [plugins]
 org-jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "org-jetbrains-kotlin-jvm" }
 org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "org-jetbrains-kotlin-android" }
 com-android-library = { id = "com.android.library", version.ref = "com-android-library" }
 com-android-application = { id = "com.android.application", version.ref = "com-android-application" }
+plugin-serialization = {id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "org-jetbrains-kotlin-jvm"}
+
 

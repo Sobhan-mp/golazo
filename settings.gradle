@@ -13,4 +13,9 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "Golazo"
-include("app", "network")
+include ':app'
+include ':data:api'
+include ':data:model'
+include ':data:repository'
+include ':data:network'
+include ':domain:matches'
