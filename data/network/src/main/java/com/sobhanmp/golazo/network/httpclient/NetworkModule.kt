@@ -46,7 +46,11 @@ object NetworkModule {
     }
 
     private fun getApiKey(): String{
-        val dotenv = dotenv()
-        return dotenv["AUTH_KEY"] ?: ""
+        return try{
+            val dotenv = dotenv()
+            dotenv["AUTH_KEY"] ?: ""
+        } catch (e: Exception){
+            ""
+        }
     }
 }
