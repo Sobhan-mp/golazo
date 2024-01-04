@@ -1,6 +1,6 @@
-package com.sobhanmp.golazo.model
+package com.sobhanmp.golazo.matches.model
 
-data class HomeTeam(
+data class HomeTeamModel(
     val crest: String,
     val id: Int,
     val name: String,

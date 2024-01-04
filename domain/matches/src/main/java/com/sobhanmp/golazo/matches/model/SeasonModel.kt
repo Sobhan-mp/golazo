@@ -1,6 +1,6 @@
-package com.sobhanmp.golazo.model
+package com.sobhanmp.golazo.matches.model
 
-data class Season(
+data class SeasonModel(
     val currentMatchday: Int,
     val endDate: String,
     val id: Int,

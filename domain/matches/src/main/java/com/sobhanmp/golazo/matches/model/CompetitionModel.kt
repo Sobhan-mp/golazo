@@ -1,6 +1,6 @@
-package com.sobhanmp.golazo.model
+package com.sobhanmp.golazo.matches.model
 
-data class Competition(
+data class CompetitionModel(
     val code: String,
     val emblem: String,
     val id: Int,
