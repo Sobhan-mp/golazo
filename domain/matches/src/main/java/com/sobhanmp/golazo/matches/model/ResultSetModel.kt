@@ -1,6 +1,6 @@
-package com.sobhanmp.golazo.model
+package com.sobhanmp.golazo.matches.model
 
-data class ResultSet(
+data class ResultSetModel(
     val competitions: String,
     val count: Int,
     val first: String,

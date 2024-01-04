@@ -1,6 +1,6 @@
-package com.sobhanmp.golazo.model
+package com.sobhanmp.golazo.matches.model
 
-data class Area(
+data class AreaModel(
     val code: String,
     val flag: String,
     val id: Int,
